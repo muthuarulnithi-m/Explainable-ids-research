@@ -1,0 +1,32 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Dataset files — do not upload large/raw data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment secrets
+.env
+.env.*
+
+# Experiment outputs
+mlruns/
+*.log
+
+# OS/editor files
+.DS_Store
+.vscode/
+
