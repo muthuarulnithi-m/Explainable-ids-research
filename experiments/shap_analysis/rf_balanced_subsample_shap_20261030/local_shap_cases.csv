@@ -1,0 +1,5 @@
+case,dataset_row_index,validation_position,actual_label,predicted_label,attack_probability,waterfall_plot
+TP,15143,3034,1,1,1.0,local_shap_tp.png
+TN,3,1,0,0,0.0,local_shap_tn.png
+FP,1026497,203357,0,1,0.9999222948244513,local_shap_fp.png
+FN,1728996,342644,1,0,0.0,local_shap_fn.png

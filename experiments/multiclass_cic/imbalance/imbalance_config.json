@@ -1,0 +1,15 @@
+{
+    "experiment": "Multiclass XGBoost class weighting",
+    "training_rows": 300000,
+    "validation_rows": 442245,
+    "random_state": 42,
+    "training_sample": "Reused baseline training sample positions",
+    "validation_split": "Reused group-level validation positions",
+    "weighting_methods": [
+        "balanced",
+        "sqrt_balanced"
+    ],
+    "weight_formula": "balanced = n_samples / (n_classes * class_count); sqrt_balanced = sqrt(balanced)",
+    "results_recovered_from": "Completed training terminal output and saved artifacts",
+    "note": "Comparison summary repaired after a pandas duplicate-column error. Models were not retrained. Timing values are retained from the completed terminal output."
+}

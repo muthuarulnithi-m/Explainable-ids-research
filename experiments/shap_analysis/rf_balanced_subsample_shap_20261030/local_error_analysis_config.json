@@ -1,0 +1,12 @@
+{
+  "run_id": "rf_balanced_subsample_shap_20261030",
+  "source_cases": "local_shap_cases.csv",
+  "model": "rf_balanced_subsample_shap_20261030.joblib",
+  "validation_split": "Reconstructed GroupShuffleSplit, test_size=0.20, random_state=42",
+  "selected_records": 4,
+  "feature_count": 78,
+  "shap_explained_class": "ATTACK (class 1)",
+  "decision_threshold": 0.5,
+  "duplicate_audit": "Checks pandas-style suffixed feature names against their base columns.",
+  "shap_version": "0.54.1"
+}

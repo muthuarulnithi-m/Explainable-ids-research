@@ -1,0 +1,6 @@
+source_file,binary_label,rows
+Monday-WorkingHours.pcap_ISCX.csv,BENIGN,95406
+Tuesday-WorkingHours.pcap_ISCX.csv,ATTACK,2502
+Tuesday-WorkingHours.pcap_ISCX.csv,BENIGN,77775
+Wednesday-workingHours.pcap_ISCX.csv,ATTACK,44626
+Wednesday-workingHours.pcap_ISCX.csv,BENIGN,79691

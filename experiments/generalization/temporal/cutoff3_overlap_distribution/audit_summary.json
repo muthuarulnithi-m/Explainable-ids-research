@@ -1,0 +1,27 @@
+{
+    "cutoff": 3,
+    "cutoff_description": "After Wednesday",
+    "training_capture_files": [
+        "Monday-WorkingHours.pcap_ISCX.csv",
+        "Tuesday-WorkingHours.pcap_ISCX.csv",
+        "Wednesday-workingHours.pcap_ISCX.csv"
+    ],
+    "evaluation_capture_files": [
+        "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+        "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+        "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+        "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+        "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv"
+    ],
+    "feature_count": 78,
+    "training_rows": 1663220,
+    "unique_training_fingerprints": 1527133,
+    "evaluation_rows": 1160503,
+    "overlap_rows": 59210,
+    "non_overlap_rows": 1101293,
+    "overlap_percentage": 5.102097969587326,
+    "non_overlap_percentage": 94.89790203041267,
+    "hash_method": "pandas.hash_pandas_object uint64",
+    "model_training_performed": false,
+    "threshold_tuning_performed": false
+}

@@ -1,0 +1,50 @@
+CIC-IDS2017 binary preprocessing report
+========================================
+Raw directory: C:\Projects\explainable-ids-research\data\raw\cic_ids2017
+Source files: 8
+Total input rows scanned: 2,830,743
+Raw normalized multiclass label counts: {'BENIGN': 2273097, 'DDoS': 128027, 'PortScan': 158930, 'Bot': 1966, 'Infiltration': 36, 'Web Attack - Brute Force': 1507, 'Web Attack - XSS': 652, 'Web Attack - SQL Injection': 21, 'FTP-Patator': 7938, 'SSH-Patator': 5897, 'DoS slowloris': 5796, 'DoS Slowhttptest': 5499, 'DoS Hulk': 231073, 'DoS GoldenEye': 10293, 'Heartbleed': 11}
+
+Feature policy
+--------------
+Model feature count: 78
+Excluded identifier columns when present: ['destination ip', 'flow id', 'source ip', 'source port', 'timestamp']
+Destination Port retained as a model feature.
+Target columns are excluded from the model features.
+Non-numeric and non-finite feature values are coerced to missing values.
+
+Grouping and ambiguity
+----------------------
+Group key: concatenated pair of independent 64-bit pandas hashes over numeric
+identifier-excluded features. A theoretical fingerprint collision is possible.
+Consistent feature groups: 2,520,966
+Rows in consistent groups retained: 2,823,723
+Ambiguous groups containing both BENIGN and ATTACK: 698
+Rows in ambiguous groups excluded from the primary binary split: 7,020
+Ambiguous rows remain in the raw dataset and are not silently relabeled.
+
+Split policy
+------------
+Approximate split: 80% train / 20% test by feature group.
+Deterministic group-level assignment based on the feature fingerprint.
+Consistent groups assigned to train: 2,017,039
+Consistent groups assigned to test: 503,927
+Output train rows: 2,255,853
+Output test rows: 567,870
+Train binary class counts: {'BENIGN': 1816203, 'ATTACK': 439650}
+Test binary class counts: {'BENIGN': 456158, 'ATTACK': 111712}
+Train/test feature-group overlap: prevented by assigning each group once in SQLite.
+Class coverage check: PASS (BENIGN and ATTACK present in both splits).
+
+Outputs
+-------
+Train CSV: C:\Projects\explainable-ids-research\data\processed\cic_binary_train.csv
+Test CSV: C:\Projects\explainable-ids-research\data\processed\cic_binary_test.csv
+SQLite grouping audit: C:\Projects\explainable-ids-research\reports\binary_pipeline_groups.sqlite
+Report: C:\Projects\explainable-ids-research\reports\binary_pipeline_report.txt
+
+Limitations
+-----------
+This is a random group-level holdout, not a temporal or cross-dataset test.
+No imputer, scaler, resampler, feature selector, or model is fitted in this script.
+The split ratio is approximate because groups, rather than individual rows, are split.

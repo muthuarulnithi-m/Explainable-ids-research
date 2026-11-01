@@ -1,0 +1,9 @@
+attack_family,support,attack_support,detected_attacks,missed_attacks,predicted_as_attack,attack_recall
+BENIGN,811213,0,0,0,255,
+Bot,1966,1966,0,1966,0,0.0
+DDoS,128021,128021,81244,46777,81244,0.6346146335366853
+Infiltration,36,36,0,36,0,0.0
+PortScan,157877,157877,141,157736,141,0.0008931003249365012
+Web Attack - Brute Force,1507,1507,0,1507,0,0.0
+Web Attack - SQL Injection,21,21,3,18,3,0.14285714285714285
+Web Attack - XSS,652,652,2,650,2,0.003067484662576687

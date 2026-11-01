@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "train_path": "C:\\Projects\\explainable-ids-research\\data\\processed\\cic_binary_train.csv",
+  "test_path": "C:\\Projects\\explainable-ids-research\\data\\processed\\cic_binary_test.csv",
+  "train_sample_size": 300000,
+  "train_sample_attack_share": 0.19489333333333334,
+  "test_rows": 567870,
+  "test_attack_share": 0.1967210805289943,
+  "num_features": 78,
+  "excluded_columns": [
+    "source_file",
+    "source_row",
+    "group_id",
+    "normalized_label",
+    "binary_label"
+  ],
+  "label_mapping": "BENIGN -> 0, all other labels -> 1 (ATTACK)",
+  "class_weighting": null,
+  "imputation": "median, fit on training sample only",
+  "models": {
+    "Logistic Regression": "SimpleImputer(median) + StandardScaler + LogisticRegression(max_iter=1000)",
+    "Random Forest": "SimpleImputer(median) + RandomForestClassifier(n_estimators=100, max_depth=20, min_samples_leaf=2)"
+  }
+}

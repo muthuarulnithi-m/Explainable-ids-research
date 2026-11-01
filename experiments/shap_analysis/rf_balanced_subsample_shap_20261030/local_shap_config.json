@@ -1,0 +1,16 @@
+{
+  "run_id": "rf_balanced_subsample_shap_20261030",
+  "explainer": "TreeExplainer",
+  "explained_class": "ATTACK (class 1)",
+  "selection": "Most confident representative prediction within each available TP, TN, FP and FN category.",
+  "decision_threshold": 0.5,
+  "validation_rows": 442245,
+  "cases_generated": [
+    "TP",
+    "TN",
+    "FP",
+    "FN"
+  ],
+  "feature_count": 78,
+  "shap_version": "0.54.1"
+}

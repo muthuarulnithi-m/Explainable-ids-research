@@ -1,0 +1,20 @@
+{
+  "run_id": "rf_balanced_subsample_shap_20261030",
+  "model": "RandomForestClassifier",
+  "explainer": "TreeExplainer",
+  "explained_class": "ATTACK (class 1)",
+  "feature_perturbation": "tree_path_dependent",
+  "model_output": "raw",
+  "sample_size": 1000,
+  "sample_method": "stratified validation sample",
+  "random_state": 42,
+  "validation_rows": 442245,
+  "sample_attack_share": 0.188,
+  "feature_count": 78,
+  "shap_values_shape": [
+    1000,
+    78
+  ],
+  "shap_version": "0.54.1",
+  "note": "SHAP values explain the model output for ATTACK class. They describe model attribution, not causal effects."
+}

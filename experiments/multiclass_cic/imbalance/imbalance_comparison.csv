@@ -1,0 +1,4 @@
+model,accuracy,macro_f1,weighted_f1,fit_seconds,predict_seconds,validation_rows,training_rows,experiment
+XGBoost,0.9991000463543963,0.7875660527483498,0.9990808045764661,323.91011476516724,55.22295546531677,442245,300000,baseline
+XGBoost_balanced,0.998906,0.790589,0.998929,254.21,9.01,442245,300000,balanced
+XGBoost_sqrt_balanced,0.999086,0.795563,0.999087,190.34,8.89,442245,300000,sqrt_balanced

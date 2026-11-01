@@ -1,0 +1,5 @@
+case,dataset_row_index,validation_position,source_file,source_row,group_id,attack_family,actual_label,predicted_label,attack_probability,shap_base_value,shap_value_sum,shap_output_sum
+TP,15143,3034,Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv,18888,fd27b5dcbaa40a62fd27b5dcbaa40a62,DDOS,1,1,1.0,0.5000000000000047,0.4999999999999842,0.9999999999999889
+TN,3,1,Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv,8,e29f4431aaa73fa9e29f4431aaa73fa9,BENIGN,0,0,0.0,0.5000000000000047,-0.5000000000000168,-1.2101430968414206e-14
+FP,1026497,203357,Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv,50270,ba8e4ca16534f93eba8e4ca16534f93e,BENIGN,0,1,0.9999222948244513,0.5000000000000047,0.49992229482443457,0.9999222948244393
+FN,1728996,342644,Wednesday-workingHours.pcap_ISCX.csv,26704,42d834cbcf62f48e42d834cbcf62f48e,DOS SLOWLORIS,1,0,0.0,0.5000000000000047,-0.5000000000000163,-1.1657341758564144e-14

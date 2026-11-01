@@ -1,0 +1,17 @@
+Model: Logistic Regression
+Fit time (seconds): 21.0245
+Prediction time (seconds): 0.4762
+Prediction latency (ms/row): 0.00083854
+
+Confusion matrix (rows=true, columns=predicted):
+[[440950  15208]
+ [ 26719  84993]]
+
+              precision    recall  f1-score   support
+
+      BENIGN   0.942868  0.966661  0.954616    456158
+      ATTACK   0.848225  0.760822  0.802150    111712
+
+    accuracy                       0.926168    567870
+   macro avg   0.895546  0.863742  0.878383    567870
+weighted avg   0.924250  0.926168  0.924623    567870

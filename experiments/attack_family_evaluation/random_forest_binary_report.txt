@@ -1,0 +1,17 @@
+Model: Random Forest
+Fit time (seconds): 19.8595
+Prediction time (seconds): 0.9887
+Prediction latency (ms/row): 0.00174105
+
+Confusion matrix (rows=true, columns=predicted):
+[[455926    232]
+ [   466 111246]]
+
+              precision    recall  f1-score   support
+
+      BENIGN   0.998979  0.999491  0.999235    456158
+      ATTACK   0.997919  0.995829  0.996873    111712
+
+    accuracy                       0.998771    567870
+   macro avg   0.998449  0.997660  0.998054    567870
+weighted avg   0.998770  0.998771  0.998770    567870

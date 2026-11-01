@@ -1,0 +1,23 @@
+scenario,class,test_rows,eligible
+Friday-WorkingHours-Afternoon-DDos,BENIGN,19721,True
+Friday-WorkingHours-Afternoon-DDos,DDoS,25585,True
+Friday-WorkingHours-Afternoon-PortScan,BENIGN,25381,True
+Friday-WorkingHours-Afternoon-PortScan,PortScan,31409,True
+Friday-WorkingHours-Morning,BENIGN,37814,True
+Friday-WorkingHours-Morning,Bot,402,True
+Monday-WorkingHours,BENIGN,105399,True
+Thursday-WorkingHours-Afternoon-Infilteration,BENIGN,57422,True
+Thursday-WorkingHours-Afternoon-Infilteration,Infiltration,12,False
+Thursday-WorkingHours-Morning-WebAttacks,BENIGN,33611,True
+Thursday-WorkingHours-Morning-WebAttacks,Web Attack - Brute Force,297,True
+Thursday-WorkingHours-Morning-WebAttacks,Web Attack - SQL Injection,5,False
+Thursday-WorkingHours-Morning-WebAttacks,Web Attack - XSS,124,True
+Tuesday-WorkingHours,BENIGN,88031,True
+Tuesday-WorkingHours,FTP-Patator,2359,True
+Tuesday-WorkingHours,SSH-Patator,1103,True
+Wednesday-workingHours,BENIGN,88779,True
+Wednesday-workingHours,DoS GoldenEye,2105,True
+Wednesday-workingHours,DoS Hulk,45993,True
+Wednesday-workingHours,DoS Slowhttptest,1095,True
+Wednesday-workingHours,DoS slowloris,1222,True
+Wednesday-workingHours,Heartbleed,1,False

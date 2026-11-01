@@ -1,0 +1,26 @@
+{
+    "experiment": "CIC capture-day ordered binary evaluation",
+    "capture_order": [
+        "Monday-WorkingHours.pcap_ISCX.csv",
+        "Tuesday-WorkingHours.pcap_ISCX.csv",
+        "Wednesday-workingHours.pcap_ISCX.csv",
+        "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+        "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+        "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+        "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+        "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv"
+    ],
+    "ordering_basis": "Documented capture scenario order, not timestamps",
+    "temporal_claim": "Approximate capture-day ordered generalization; not true timestamp-based temporal validation",
+    "source_files": [
+        "data\\processed\\cic_binary_train.csv",
+        "data\\processed\\cic_binary_test.csv"
+    ],
+    "rows": 2823723,
+    "unique_groups": 2520966,
+    "groups_spanning_capture_files": 33544,
+    "candidate_cutoffs": 7,
+    "feature_vector_overlap": "Not calculated in this metadata-only audit. Requires exact 78-feature row comparison.",
+    "model_training_performed": false,
+    "threshold_tuning_performed": false
+}

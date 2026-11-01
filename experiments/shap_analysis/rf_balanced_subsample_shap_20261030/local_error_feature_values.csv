@@ -1,0 +1,313 @@
+case,feature,original_value,imputed_value
+TP,Destination Port,80.0,80.0
+TP,Flow Duration,80034360.0,80034360.0
+TP,Total Fwd Packets,8.0,8.0
+TP,Total Backward Packets,4.0,4.0
+TP,Total Length of Fwd Packets,56.0,56.0
+TP,Total Length of Bwd Packets,11601.0,11601.0
+TP,Fwd Packet Length Max,20.0,20.0
+TP,Fwd Packet Length Min,0.0,0.0
+TP,Fwd Packet Length Mean,7.0,7.0
+TP,Fwd Packet Length Std,5.656854152679443,5.656854152679443
+TP,Bwd Packet Length Max,8760.0,8760.0
+TP,Bwd Packet Length Min,0.0,0.0
+TP,Bwd Packet Length Mean,2900.25,2900.25
+TP,Bwd Packet Length Std,4128.3193359375,4128.3193359375
+TP,Flow Bytes/s,145.6499481201172,145.6499481201172
+TP,Flow Packets/s,0.14993560314178467,0.14993560314178467
+TP,Flow IAT Mean,7275851.0,7275851.0
+TP,Flow IAT Std,21100000.0,21100000.0
+TP,Flow IAT Max,70600000.0,70600000.0
+TP,Flow IAT Min,6.0,6.0
+TP,Fwd IAT Total,78700000.0,78700000.0
+TP,Fwd IAT Mean,11200000.0,11200000.0
+TP,Fwd IAT Std,26300000.0,26300000.0
+TP,Fwd IAT Max,70600000.0,70600000.0
+TP,Fwd IAT Min,247.0,247.0
+TP,Bwd IAT Total,1354806.0,1354806.0
+TP,Bwd IAT Mean,451602.0,451602.0
+TP,Bwd IAT Std,777575.25,777575.25
+TP,Bwd IAT Max,1349464.0,1349464.0
+TP,Bwd IAT Min,190.0,190.0
+TP,Fwd PSH Flags,0.0,0.0
+TP,Bwd PSH Flags,0.0,0.0
+TP,Fwd URG Flags,0.0,0.0
+TP,Bwd URG Flags,0.0,0.0
+TP,Fwd Header Length,172.0,172.0
+TP,Bwd Header Length,92.0,92.0
+TP,Fwd Packets/s,0.09995707124471664,0.09995707124471664
+TP,Bwd Packets/s,0.04997853562235832,0.04997853562235832
+TP,Min Packet Length,0.0,0.0
+TP,Max Packet Length,8760.0,8760.0
+TP,Packet Length Mean,897.1538696289062,897.1538696289062
+TP,Packet Length Std,2488.507080078125,2488.507080078125
+TP,Packet Length Variance,6192667.5,6192667.5
+TP,FIN Flag Count,0.0,0.0
+TP,SYN Flag Count,0.0,0.0
+TP,RST Flag Count,0.0,0.0
+TP,PSH Flag Count,0.0,0.0
+TP,ACK Flag Count,1.0,1.0
+TP,URG Flag Count,0.0,0.0
+TP,CWE Flag Count,0.0,0.0
+TP,ECE Flag Count,0.0,0.0
+TP,Down/Up Ratio,0.0,0.0
+TP,Average Packet Size,971.9166870117188,971.9166870117188
+TP,Avg Fwd Segment Size,7.0,7.0
+TP,Avg Bwd Segment Size,2900.25,2900.25
+TP,Fwd Header Length.1,172.0,172.0
+TP,Fwd Avg Bytes/Bulk,0.0,0.0
+TP,Fwd Avg Packets/Bulk,0.0,0.0
+TP,Fwd Avg Bulk Rate,0.0,0.0
+TP,Bwd Avg Bytes/Bulk,0.0,0.0
+TP,Bwd Avg Packets/Bulk,0.0,0.0
+TP,Bwd Avg Bulk Rate,0.0,0.0
+TP,Subflow Fwd Packets,8.0,8.0
+TP,Subflow Fwd Bytes,56.0,56.0
+TP,Subflow Bwd Packets,4.0,4.0
+TP,Subflow Bwd Bytes,11601.0,11601.0
+TP,Init_Win_bytes_forward,256.0,256.0
+TP,Init_Win_bytes_backward,229.0,229.0
+TP,act_data_pkt_fwd,6.0,6.0
+TP,min_seg_size_forward,20.0,20.0
+TP,Active Mean,939.0,939.0
+TP,Active Std,0.0,0.0
+TP,Active Max,939.0,939.0
+TP,Active Min,939.0,939.0
+TP,Idle Mean,39300000.0,39300000.0
+TP,Idle Std,44200000.0,44200000.0
+TP,Idle Max,70600000.0,70600000.0
+TP,Idle Min,8072664.0,8072664.0
+TN,Destination Port,54925.0,54925.0
+TN,Flow Duration,4.0,4.0
+TN,Total Fwd Packets,2.0,2.0
+TN,Total Backward Packets,0.0,0.0
+TN,Total Length of Fwd Packets,12.0,12.0
+TN,Total Length of Bwd Packets,0.0,0.0
+TN,Fwd Packet Length Max,6.0,6.0
+TN,Fwd Packet Length Min,6.0,6.0
+TN,Fwd Packet Length Mean,6.0,6.0
+TN,Fwd Packet Length Std,0.0,0.0
+TN,Bwd Packet Length Max,0.0,0.0
+TN,Bwd Packet Length Min,0.0,0.0
+TN,Bwd Packet Length Mean,0.0,0.0
+TN,Bwd Packet Length Std,0.0,0.0
+TN,Flow Bytes/s,3000000.0,3000000.0
+TN,Flow Packets/s,500000.0,500000.0
+TN,Flow IAT Mean,4.0,4.0
+TN,Flow IAT Std,0.0,0.0
+TN,Flow IAT Max,4.0,4.0
+TN,Flow IAT Min,4.0,4.0
+TN,Fwd IAT Total,4.0,4.0
+TN,Fwd IAT Mean,4.0,4.0
+TN,Fwd IAT Std,0.0,0.0
+TN,Fwd IAT Max,4.0,4.0
+TN,Fwd IAT Min,4.0,4.0
+TN,Bwd IAT Total,0.0,0.0
+TN,Bwd IAT Mean,0.0,0.0
+TN,Bwd IAT Std,0.0,0.0
+TN,Bwd IAT Max,0.0,0.0
+TN,Bwd IAT Min,0.0,0.0
+TN,Fwd PSH Flags,0.0,0.0
+TN,Bwd PSH Flags,0.0,0.0
+TN,Fwd URG Flags,0.0,0.0
+TN,Bwd URG Flags,0.0,0.0
+TN,Fwd Header Length,40.0,40.0
+TN,Bwd Header Length,0.0,0.0
+TN,Fwd Packets/s,500000.0,500000.0
+TN,Bwd Packets/s,0.0,0.0
+TN,Min Packet Length,6.0,6.0
+TN,Max Packet Length,6.0,6.0
+TN,Packet Length Mean,6.0,6.0
+TN,Packet Length Std,0.0,0.0
+TN,Packet Length Variance,0.0,0.0
+TN,FIN Flag Count,0.0,0.0
+TN,SYN Flag Count,0.0,0.0
+TN,RST Flag Count,0.0,0.0
+TN,PSH Flag Count,0.0,0.0
+TN,ACK Flag Count,1.0,1.0
+TN,URG Flag Count,0.0,0.0
+TN,CWE Flag Count,0.0,0.0
+TN,ECE Flag Count,0.0,0.0
+TN,Down/Up Ratio,0.0,0.0
+TN,Average Packet Size,9.0,9.0
+TN,Avg Fwd Segment Size,6.0,6.0
+TN,Avg Bwd Segment Size,0.0,0.0
+TN,Fwd Header Length.1,40.0,40.0
+TN,Fwd Avg Bytes/Bulk,0.0,0.0
+TN,Fwd Avg Packets/Bulk,0.0,0.0
+TN,Fwd Avg Bulk Rate,0.0,0.0
+TN,Bwd Avg Bytes/Bulk,0.0,0.0
+TN,Bwd Avg Packets/Bulk,0.0,0.0
+TN,Bwd Avg Bulk Rate,0.0,0.0
+TN,Subflow Fwd Packets,2.0,2.0
+TN,Subflow Fwd Bytes,12.0,12.0
+TN,Subflow Bwd Packets,0.0,0.0
+TN,Subflow Bwd Bytes,0.0,0.0
+TN,Init_Win_bytes_forward,32.0,32.0
+TN,Init_Win_bytes_backward,-1.0,-1.0
+TN,act_data_pkt_fwd,1.0,1.0
+TN,min_seg_size_forward,20.0,20.0
+TN,Active Mean,0.0,0.0
+TN,Active Std,0.0,0.0
+TN,Active Max,0.0,0.0
+TN,Active Min,0.0,0.0
+TN,Idle Mean,0.0,0.0
+TN,Idle Std,0.0,0.0
+TN,Idle Max,0.0,0.0
+TN,Idle Min,0.0,0.0
+FP,Destination Port,111.0,111.0
+FP,Flow Duration,40.0,40.0
+FP,Total Fwd Packets,1.0,1.0
+FP,Total Backward Packets,1.0,1.0
+FP,Total Length of Fwd Packets,2.0,2.0
+FP,Total Length of Bwd Packets,6.0,6.0
+FP,Fwd Packet Length Max,2.0,2.0
+FP,Fwd Packet Length Min,2.0,2.0
+FP,Fwd Packet Length Mean,2.0,2.0
+FP,Fwd Packet Length Std,0.0,0.0
+FP,Bwd Packet Length Max,6.0,6.0
+FP,Bwd Packet Length Min,6.0,6.0
+FP,Bwd Packet Length Mean,6.0,6.0
+FP,Bwd Packet Length Std,0.0,0.0
+FP,Flow Bytes/s,200000.0,200000.0
+FP,Flow Packets/s,50000.0,50000.0
+FP,Flow IAT Mean,40.0,40.0
+FP,Flow IAT Std,0.0,0.0
+FP,Flow IAT Max,40.0,40.0
+FP,Flow IAT Min,40.0,40.0
+FP,Fwd IAT Total,0.0,0.0
+FP,Fwd IAT Mean,0.0,0.0
+FP,Fwd IAT Std,0.0,0.0
+FP,Fwd IAT Max,0.0,0.0
+FP,Fwd IAT Min,0.0,0.0
+FP,Bwd IAT Total,0.0,0.0
+FP,Bwd IAT Mean,0.0,0.0
+FP,Bwd IAT Std,0.0,0.0
+FP,Bwd IAT Max,0.0,0.0
+FP,Bwd IAT Min,0.0,0.0
+FP,Fwd PSH Flags,0.0,0.0
+FP,Bwd PSH Flags,0.0,0.0
+FP,Fwd URG Flags,0.0,0.0
+FP,Bwd URG Flags,0.0,0.0
+FP,Fwd Header Length,24.0,24.0
+FP,Bwd Header Length,20.0,20.0
+FP,Fwd Packets/s,25000.0,25000.0
+FP,Bwd Packets/s,25000.0,25000.0
+FP,Min Packet Length,2.0,2.0
+FP,Max Packet Length,6.0,6.0
+FP,Packet Length Mean,3.3333332538604736,3.3333332538604736
+FP,Packet Length Std,2.309401035308838,2.309401035308838
+FP,Packet Length Variance,5.333333492279053,5.333333492279053
+FP,FIN Flag Count,0.0,0.0
+FP,SYN Flag Count,0.0,0.0
+FP,RST Flag Count,0.0,0.0
+FP,PSH Flag Count,1.0,1.0
+FP,ACK Flag Count,0.0,0.0
+FP,URG Flag Count,0.0,0.0
+FP,CWE Flag Count,0.0,0.0
+FP,ECE Flag Count,0.0,0.0
+FP,Down/Up Ratio,1.0,1.0
+FP,Average Packet Size,5.0,5.0
+FP,Avg Fwd Segment Size,2.0,2.0
+FP,Avg Bwd Segment Size,6.0,6.0
+FP,Fwd Header Length.1,24.0,24.0
+FP,Fwd Avg Bytes/Bulk,0.0,0.0
+FP,Fwd Avg Packets/Bulk,0.0,0.0
+FP,Fwd Avg Bulk Rate,0.0,0.0
+FP,Bwd Avg Bytes/Bulk,0.0,0.0
+FP,Bwd Avg Packets/Bulk,0.0,0.0
+FP,Bwd Avg Bulk Rate,0.0,0.0
+FP,Subflow Fwd Packets,1.0,1.0
+FP,Subflow Fwd Bytes,2.0,2.0
+FP,Subflow Bwd Packets,1.0,1.0
+FP,Subflow Bwd Bytes,6.0,6.0
+FP,Init_Win_bytes_forward,1024.0,1024.0
+FP,Init_Win_bytes_backward,0.0,0.0
+FP,act_data_pkt_fwd,0.0,0.0
+FP,min_seg_size_forward,24.0,24.0
+FP,Active Mean,0.0,0.0
+FP,Active Std,0.0,0.0
+FP,Active Max,0.0,0.0
+FP,Active Min,0.0,0.0
+FP,Idle Mean,0.0,0.0
+FP,Idle Std,0.0,0.0
+FP,Idle Max,0.0,0.0
+FP,Idle Min,0.0,0.0
+FN,Destination Port,80.0,80.0
+FN,Flow Duration,5125872.0,5125872.0
+FN,Total Fwd Packets,8.0,8.0
+FN,Total Backward Packets,7.0,7.0
+FN,Total Length of Fwd Packets,1659.0,1659.0
+FN,Total Length of Bwd Packets,2514.0,2514.0
+FN,Fwd Packet Length Max,467.0,467.0
+FN,Fwd Packet Length Min,0.0,0.0
+FN,Fwd Packet Length Mean,207.375,207.375
+FN,Fwd Packet Length Std,221.27806091308594,221.27806091308594
+FN,Bwd Packet Length Max,1047.0,1047.0
+FN,Bwd Packet Length Min,0.0,0.0
+FN,Bwd Packet Length Mean,359.1428527832031,359.1428527832031
+FN,Bwd Packet Length Std,420.1838684082031,420.1838684082031
+FN,Flow Bytes/s,814.1054077148438,814.1054077148438
+FN,Flow Packets/s,2.9263312816619873,2.9263312816619873
+FN,Flow IAT Mean,366133.71875,366133.71875
+FN,Flow IAT Std,1320784.375,1320784.375
+FN,Flow IAT Max,4954614.0,4954614.0
+FN,Flow IAT Min,73.0,73.0
+FN,Fwd IAT Total,171258.0,171258.0
+FN,Fwd IAT Mean,24465.427734375,24465.427734375
+FN,Fwd IAT Std,21945.24609375,21945.24609375
+FN,Fwd IAT Max,57169.0,57169.0
+FN,Fwd IAT Min,1001.0,1001.0
+FN,Bwd IAT Total,5125743.0,5125743.0
+FN,Bwd IAT Mean,854290.5,854290.5
+FN,Bwd IAT Std,2033515.25,2033515.25
+FN,Bwd IAT Max,5004981.0,5004981.0
+FN,Bwd IAT Min,2049.0,2049.0
+FN,Fwd PSH Flags,0.0,0.0
+FN,Bwd PSH Flags,0.0,0.0
+FN,Fwd URG Flags,0.0,0.0
+FN,Bwd URG Flags,0.0,0.0
+FN,Fwd Header Length,172.0,172.0
+FN,Bwd Header Length,152.0,152.0
+FN,Fwd Packets/s,1.560710072517395,1.560710072517395
+FN,Bwd Packets/s,1.3656213283538818,1.3656213283538818
+FN,Min Packet Length,0.0,0.0
+FN,Max Packet Length,1047.0,1047.0
+FN,Packet Length Mean,260.8125,260.8125
+FN,Packet Length Std,322.5548400878906,322.5548400878906
+FN,Packet Length Variance,104041.6328125,104041.6328125
+FN,FIN Flag Count,0.0,0.0
+FN,SYN Flag Count,0.0,0.0
+FN,RST Flag Count,0.0,0.0
+FN,PSH Flag Count,1.0,1.0
+FN,ACK Flag Count,0.0,0.0
+FN,URG Flag Count,0.0,0.0
+FN,CWE Flag Count,0.0,0.0
+FN,ECE Flag Count,0.0,0.0
+FN,Down/Up Ratio,0.0,0.0
+FN,Average Packet Size,278.20001220703125,278.20001220703125
+FN,Avg Fwd Segment Size,207.375,207.375
+FN,Avg Bwd Segment Size,359.1428527832031,359.1428527832031
+FN,Fwd Header Length.1,172.0,172.0
+FN,Fwd Avg Bytes/Bulk,0.0,0.0
+FN,Fwd Avg Packets/Bulk,0.0,0.0
+FN,Fwd Avg Bulk Rate,0.0,0.0
+FN,Bwd Avg Bytes/Bulk,0.0,0.0
+FN,Bwd Avg Packets/Bulk,0.0,0.0
+FN,Bwd Avg Bulk Rate,0.0,0.0
+FN,Subflow Fwd Packets,8.0,8.0
+FN,Subflow Fwd Bytes,1659.0,1659.0
+FN,Subflow Bwd Packets,7.0,7.0
+FN,Subflow Bwd Bytes,2514.0,2514.0
+FN,Init_Win_bytes_forward,8192.0,8192.0
+FN,Init_Win_bytes_backward,262.0,262.0
+FN,act_data_pkt_fwd,7.0,7.0
+FN,min_seg_size_forward,20.0,20.0
+FN,Active Mean,0.0,0.0
+FN,Active Std,0.0,0.0
+FN,Active Max,0.0,0.0
+FN,Active Min,0.0,0.0
+FN,Idle Mean,0.0,0.0
+FN,Idle Std,0.0,0.0
+FN,Idle Max,0.0,0.0
+FN,Idle Min,0.0,0.0

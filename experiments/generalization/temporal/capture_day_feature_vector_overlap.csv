@@ -1,0 +1,8 @@
+cutoff_after,training_rows,evaluation_rows,unique_training_vectors,unique_evaluation_vectors,overlapping_evaluation_rows,evaluation_row_overlap_pct,unique_overlapping_vectors,unique_evaluation_vector_overlap_pct
+Monday-WorkingHours.pcap_ISCX.csv,529915,2293808,502980,2018336,6091,0.2655409694272581,350,0.017341017551091593
+Tuesday-WorkingHours.pcap_ISCX.csv,975791,1847932,924740,1611661,47585,2.5750406400235506,15435,0.9577076072449479
+Wednesday-workingHours.pcap_ISCX.csv,1663220,1160503,1527133,1017491,59210,5.102097969587326,23658,2.325131131381015
+Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv,1833577,990146,1683384,860773,50613,5.11167040012281,23191,2.694206254145983
+Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv,2121559,702164,1925243,615306,35072,4.994844509259945,19583,3.182644082781575
+Friday-WorkingHours-Morning.pcap_ISCX.csv,2312582,511141,2098278,435123,19182,3.7527805439203665,12435,2.857812618500976
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv,2597989,225734,2303205,223104,7175,3.1785198507978416,5343,2.394847246127367

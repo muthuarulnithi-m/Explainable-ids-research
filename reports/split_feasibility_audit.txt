@@ -1,0 +1,55 @@
+CIC-IDS2017 SPLIT-FEASIBILITY AUDIT
+========================================
+
+Total rows: 2,830,743
+Files audited: 8
+
+PER-FILE CLASS COVERAGE
+----------------------------------------
+
+Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv (225,745 rows)
+  BENIGN: 97,718
+  DDoS: 128,027
+
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv (286,467 rows)
+  BENIGN: 127,537
+  PortScan: 158,930
+
+Friday-WorkingHours-Morning.pcap_ISCX.csv (191,033 rows)
+  BENIGN: 189,067
+  Bot: 1,966
+
+Monday-WorkingHours.pcap_ISCX.csv (529,918 rows)
+  BENIGN: 529,918
+
+Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv (288,602 rows)
+  BENIGN: 288,566
+  Infiltration: 36
+
+Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv (170,366 rows)
+  BENIGN: 168,186
+  Web Attack - Brute Force: 1,507
+  Web Attack - SQL Injection: 21
+  Web Attack - XSS: 652
+
+Tuesday-WorkingHours.pcap_ISCX.csv (445,909 rows)
+  BENIGN: 432,074
+  FTP-Patator: 7,938
+  SSH-Patator: 5,897
+
+Wednesday-workingHours.pcap_ISCX.csv (692,703 rows)
+  BENIGN: 440,031
+  DoS GoldenEye: 10,293
+  DoS Hulk: 231,073
+  DoS Slowhttptest: 5,499
+  DoS slowloris: 5,796
+  Heartbleed: 11
+
+FEATURE-FINGERPRINT SUMMARY
+----------------------------------------
+Distinct fingerprints occurring multiple times: 91,252
+Repeated row occurrences beyond the first: 597,052
+Fingerprints appearing in multiple files: 49,136
+Fingerprints with conflicting labels: 272
+
+Note: 64-bit feature hashes identify candidate duplicates; they are not proof of exact row equality. Identifier columns are excluded. Verify flagged groups before deciding splits. No raw CSV files were modified.

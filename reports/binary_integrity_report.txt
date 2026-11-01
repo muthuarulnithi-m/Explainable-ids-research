@@ -1,0 +1,56 @@
+CIC-IDS2017 binary dataset integrity report
+===========================================
+Train file: C:\Projects\explainable-ids-research\data\processed\cic_binary_train.csv
+Test file: C:\Projects\explainable-ids-research\data\processed\cic_binary_test.csv
+Train rows: 2,255,853
+Test rows: 567,870
+Total rows: 2,823,723
+Model feature count: 78
+Feature schema matches: True
+Distinct group IDs across both splits: 2,520,966
+Group IDs present in both splits: 0
+
+Binary class counts
+-------------------
+Train: {'BENIGN': 1816203, 'ATTACK': 439650}
+Test: {'BENIGN': 456158, 'ATTACK': 111712}
+
+Normalized multiclass label counts (train)
+------------------------------------------
+{'BENIGN': 1816203, 'DDoS': 102436, 'PortScan': 126468, 'Bot': 1564, 'Infiltration': 24, 'Web Attack - Brute Force': 1210, 'Web Attack - XSS': 528, 'Web Attack - SQL Injection': 16, 'FTP-Patator': 5579, 'SSH-Patator': 4794, 'DoS slowloris': 4573, 'DoS Slowhttptest': 4404, 'DoS Hulk': 179856, 'DoS GoldenEye': 8188, 'Heartbleed': 10}
+
+Normalized multiclass label counts (test)
+-----------------------------------------
+{'BENIGN': 456158, 'DDoS': 25585, 'PortScan': 31409, 'Bot': 402, 'Infiltration': 12, 'Web Attack - Brute Force': 297, 'Web Attack - XSS': 124, 'Web Attack - SQL Injection': 5, 'FTP-Patator': 2359, 'SSH-Patator': 1103, 'DoS slowloris': 1222, 'DoS Slowhttptest': 1095, 'DoS Hulk': 45993, 'DoS GoldenEye': 2105, 'Heartbleed': 1}
+
+Data quality
+------------
+Invalid binary-label mappings: train=0, test=0
+Blank group IDs: train=0, test=0
+Blank source_file values: train=0, test=0
+Repeated rows sharing a group ID within each split (diagnostic only): train=116,781, test=44,509
+
+Features with missing/non-numeric/non-finite values
+---------------------------------------------------
+Flow Bytes/s: missing=2,513, non_numeric=0, infinite=0
+Flow Packets/s: missing=2,513, non_numeric=0, infinite=0
+
+Integrity checks
+----------------
+PASS: Train split contains rows
+PASS: Test split contains rows
+PASS: Both classes present in train
+PASS: Both classes present in test
+PASS: No train/test group_id overlap
+PASS: No invalid binary-label mappings
+PASS: No blank group IDs
+PASS: No blank source_file values
+
+OVERALL: PASS
+
+Notes
+-----
+Missing feature values are reported, not imputed by this script.
+Repeated group IDs within a split are reported as a diagnostic; they are not automatically errors.
+This verifies the saved split files and group_id separation. The group IDs themselves are 128-bit fingerprints and therefore have a theoretical collision risk.
+This random group-level holdout does not establish temporal or cross-dataset generalization.

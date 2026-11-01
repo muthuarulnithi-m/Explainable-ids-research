@@ -1,0 +1,31 @@
+{
+  "seed": 42,
+  "train_path": "C:\\Projects\\explainable-ids-research\\data\\processed\\cic_binary_train.csv",
+  "validation": "GroupShuffleSplit on group_id (test_size=0.20); test CSV not used",
+  "inner_train_sample_size": 300000,
+  "validation_rows": 442245,
+  "validation_attack_share": 0.1876810365295255,
+  "num_features": 78,
+  "excluded_columns": [
+    "source_file",
+    "source_row",
+    "group_id",
+    "normalized_label",
+    "binary_label"
+  ],
+  "imputation": "median, fit inside each pipeline on training fold only",
+  "smote": {
+    "sampling_strategy": 0.5,
+    "k_neighbors": 5,
+    "note": "binary SMOTE; interpolates across all attack families"
+  },
+  "decision_threshold": "default predict() threshold; probabilities not recalibrated",
+  "configs": [
+    "LR baseline",
+    "LR class_weight=balanced",
+    "LR SMOTE",
+    "RF baseline",
+    "RF class_weight=balanced_subsample",
+    "RF SMOTE"
+  ]
+}

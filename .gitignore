@@ -1,6 +1,6 @@
-
 # Python
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *.egg-info/
 
@@ -26,7 +26,36 @@ data/processed/*
 mlruns/
 *.log
 
+# Generated databases and large audit intermediates
+*.sqlite
+*.sqlite3
+*.db
+
+# Trained models and large intermediate arrays
+*.joblib
+*.npy
+
+# Generated flow-level predictions and group mappings
+experiments/**/predictions/*.csv
+experiments/**/group_audit/*predictions_with_groups.csv
+
+# Large training metadata
+experiments/**/training_sample_metadata.csv
+experiments/**/configs/training_sample_metadata.csv
+
+# Large raw conflict-row export
+reports/conflicting_fingerprint_rows.csv
+
 # OS/editor files
 .DS_Store
 .vscode/
+# Superseded scenario evaluation outputs
+experiments/generalization/cic_scenario/
 
+# Redundant earlier bootstrap backup
+experiments/generalization/temporal/cutoff3/group_bootstrap/backup_1000_replicates/
+
+# Trained XGBoost model artifacts (retain configs and metrics)
+experiments/multiclass_cic/multiclass_xgboost.json
+experiments/multiclass_cic/imbalance/xgboost_balanced.json
+experiments/multiclass_cic/imbalance/xgboost_sqrt_balanced.json

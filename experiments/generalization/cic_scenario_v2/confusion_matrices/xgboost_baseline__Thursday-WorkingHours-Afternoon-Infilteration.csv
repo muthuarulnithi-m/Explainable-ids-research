@@ -1,0 +1,6 @@
+,BENIGN,Bot,DoS Hulk,Infiltration,PortScan
+BENIGN,57332,2,3,0,85
+Bot,0,0,0,0,0
+DoS Hulk,0,0,0,0,0
+Infiltration,8,0,0,4,0
+PortScan,0,0,0,0,0

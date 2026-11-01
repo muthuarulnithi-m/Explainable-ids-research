@@ -1,0 +1,13 @@
+{
+  "run_id": "rf_balanced_subsample_shap_20261030",
+  "explained_output": "ATTACK class probability",
+  "sample_size": 1000,
+  "feature_count": 78,
+  "max_absolute_additivity_error": 2.7249036360643686e-14,
+  "mean_absolute_additivity_error": 1.1184026567947731e-14,
+  "tolerance": 1e-05,
+  "additivity_check_passed": true,
+  "saved_shap_max_difference": 0.0,
+  "saved_actual_labels_match": true,
+  "shap_version": "0.54.1"
+}

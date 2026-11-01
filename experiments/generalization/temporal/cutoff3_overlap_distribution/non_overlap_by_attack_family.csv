@@ -1,0 +1,9 @@
+normalized_label,binary_label,rows
+BENIGN,BENIGN,811213
+PortScan,ATTACK,157877
+DDoS,ATTACK,128021
+Bot,ATTACK,1966
+Web Attack - Brute Force,ATTACK,1507
+Web Attack - XSS,ATTACK,652
+Infiltration,ATTACK,36
+Web Attack - SQL Injection,ATTACK,21

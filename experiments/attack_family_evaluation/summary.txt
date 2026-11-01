@@ -1,0 +1,44 @@
+BINARY BASELINE: ATTACK-FAMILY DETECTION
+=======================================================
+
+Each attack family's detection rate is the proportion of that family's test rows predicted as ATTACK by the binary model.
+This is not multiclass classification. The model does not predict an attack-family name.
+
+
+Logistic Regression
+-------------------
+              model                      label category  test_rows  detected_as_attack  missed_as_benign  detection_rate  false_positive_rate
+Logistic Regression                        Bot   ATTACK        402                 106               296        0.263682                  NaN
+Logistic Regression                       DDoS   ATTACK      25585               21535              4050        0.841704                  NaN
+Logistic Regression              DoS GoldenEye   ATTACK       2105                1713               392        0.813777                  NaN
+Logistic Regression                   DoS Hulk   ATTACK      45993               30989             15004        0.673776                  NaN
+Logistic Regression           DoS Slowhttptest   ATTACK       1095                 891               204        0.813699                  NaN
+Logistic Regression              DoS slowloris   ATTACK       1222                 989               233        0.809329                  NaN
+Logistic Regression                FTP-Patator   ATTACK       2359                 774              1585        0.328105                  NaN
+Logistic Regression                 Heartbleed   ATTACK          1                   1                 0        1.000000                  NaN
+Logistic Regression               Infiltration   ATTACK         12                   1                11        0.083333                  NaN
+Logistic Regression                   PortScan   ATTACK      31409               27987              3422        0.891050                  NaN
+Logistic Regression                SSH-Patator   ATTACK       1103                   7              1096        0.006346                  NaN
+Logistic Regression   Web Attack - Brute Force   ATTACK        297                   0               297        0.000000                  NaN
+Logistic Regression Web Attack - SQL Injection   ATTACK          5                   0                 5        0.000000                  NaN
+Logistic Regression           Web Attack - XSS   ATTACK        124                   0               124        0.000000                  NaN
+Logistic Regression                     BENIGN   BENIGN     456158               15208            440950             NaN             0.033339
+
+Random Forest
+-------------
+        model                      label category  test_rows  detected_as_attack  missed_as_benign  detection_rate  false_positive_rate
+Random Forest                        Bot   ATTACK        402                 173               229        0.430348                  NaN
+Random Forest                       DDoS   ATTACK      25585               25534                51        0.998007                  NaN
+Random Forest              DoS GoldenEye   ATTACK       2105                2092                13        0.993824                  NaN
+Random Forest                   DoS Hulk   ATTACK      45993               45894                99        0.997847                  NaN
+Random Forest           DoS Slowhttptest   ATTACK       1095                1086                 9        0.991781                  NaN
+Random Forest              DoS slowloris   ATTACK       1222                1218                 4        0.996727                  NaN
+Random Forest                FTP-Patator   ATTACK       2359                2354                 5        0.997880                  NaN
+Random Forest                 Heartbleed   ATTACK          1                   1                 0        1.000000                  NaN
+Random Forest               Infiltration   ATTACK         12                   0                12        0.000000                  NaN
+Random Forest                   PortScan   ATTACK      31409               31401                 8        0.999745                  NaN
+Random Forest                SSH-Patator   ATTACK       1103                1087                16        0.985494                  NaN
+Random Forest   Web Attack - Brute Force   ATTACK        297                 287                10        0.966330                  NaN
+Random Forest Web Attack - SQL Injection   ATTACK          5                   1                 4        0.200000                  NaN
+Random Forest           Web Attack - XSS   ATTACK        124                 118                 6        0.951613                  NaN
+Random Forest                     BENIGN   BENIGN     456158                 232            455926             NaN             0.000509

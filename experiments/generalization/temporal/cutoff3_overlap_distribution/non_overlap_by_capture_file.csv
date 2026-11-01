@@ -1,0 +1,11 @@
+source_file,binary_label,rows
+Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv,BENIGN,270779
+Friday-WorkingHours-Morning.pcap_ISCX.csv,BENIGN,174861
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv,ATTACK,157877
+Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv,BENIGN,155215
+Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv,ATTACK,128021
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv,BENIGN,117574
+Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv,BENIGN,92784
+Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv,ATTACK,2180
+Friday-WorkingHours-Morning.pcap_ISCX.csv,ATTACK,1966
+Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv,ATTACK,36

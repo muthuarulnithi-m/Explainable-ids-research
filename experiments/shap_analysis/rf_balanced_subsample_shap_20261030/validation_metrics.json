@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.9988920168684778,
+  "macro_f1": 0.9981829182830393,
+  "attack_precision": 0.9971919929619051,
+  "attack_recall": 0.9969036517632318,
+  "false_positive_rate": 0.0006485842491454276,
+  "average_precision": 0.9997819685436342,
+  "tn": 359011,
+  "fp": 233,
+  "fn": 257,
+  "tp": 82744,
+  "fit_seconds": 56.079
+}
