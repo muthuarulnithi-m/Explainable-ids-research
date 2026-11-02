@@ -1,0 +1,4 @@
+model,rows,groups,headline_macro_f1
+xgboost_baseline,567870,503927,0.9072960656993323
+xgboost_balanced,567870,503927,0.9064873302337689
+xgboost_sqrt_balanced,567870,503927,0.912668039059359

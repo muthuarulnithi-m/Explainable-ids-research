@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 
 import pytest
-
+import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src" / "evaluation"))
 from scenario_metrics import scenario_metrics  # noqa: E402
 
@@ -28,12 +28,6 @@ def test_perfect_prediction_gives_one():
     assert m["absent_class_predictions"] == 0
 
 
-def test_only_not_evaluable_classes_gives_nan():
-    m = scenario_metrics(["Heartbleed"], ["Heartbleed"],
-                         eligible_classes={"BENIGN", "Bot"})
-    assert m["headline_macro_f1"] != m["headline_macro_f1"]  # NaN
-    assert m["not_evaluable_classes_present"] == ["Heartbleed"]
-
 
 def test_benign_only_day_reports_false_positive_rate():
     # Monday-style: four benign flows, two wrongly flagged.
@@ -45,3 +39,13 @@ def test_benign_only_day_reports_false_positive_rate():
     assert m["benign_recall"] == pytest.approx(0.5)
     assert m["benign_false_positive_rate"] == pytest.approx(0.5)
     assert m["absent_class_predictions"] == 2
+
+def test_only_not_evaluable_classes_gives_nan():
+    m = scenario_metrics(
+        ["Heartbleed"],
+        ["Heartbleed"],
+        eligible_classes={"BENIGN", "Bot"},
+    )
+    assert np.isnan(m["headline_macro_f1"])
+    assert m["union_macro_f1"] == pytest.approx(1.0)
+    assert m["not_evaluable_classes_present"] == ["Heartbleed"]

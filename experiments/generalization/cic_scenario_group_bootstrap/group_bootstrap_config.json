@@ -1,0 +1,60 @@
+{
+  "phase": "6.1 CIC scenario group-clustered bootstrap",
+  "protocol": "Existing saved multiclass XGBoost models evaluated on the unchanged cic_binary_test.csv. No training, refitting, or threshold tuning.",
+  "bootstrap_unit": "group_id",
+  "paired_resampling": true,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 42,
+  "confidence_interval": "95% percentile interval",
+  "test_rows": 567870,
+  "unique_test_groups": 503927,
+  "largest_group_size": 6814,
+  "eligible_classes": [
+    "BENIGN",
+    "Bot",
+    "DDoS",
+    "DoS GoldenEye",
+    "DoS Hulk",
+    "DoS Slowhttptest",
+    "DoS slowloris",
+    "FTP-Patator",
+    "PortScan",
+    "SSH-Patator",
+    "Web Attack - Brute Force",
+    "Web Attack - XSS"
+  ],
+  "all_classes_in_confusion_matrix": [
+    "BENIGN",
+    "Bot",
+    "DDoS",
+    "DoS GoldenEye",
+    "DoS Hulk",
+    "DoS Slowhttptest",
+    "DoS slowloris",
+    "FTP-Patator",
+    "Heartbleed",
+    "Infiltration",
+    "PortScan",
+    "SSH-Patator",
+    "Web Attack - Brute Force",
+    "Web Attack - SQL Injection",
+    "Web Attack - XSS"
+  ],
+  "headline_metric": "Macro F1 over eligible classes with positive true support in each replicate; zero_division=0.",
+  "largest_group_sensitivity": true,
+  "limitations": [
+    "Pooled group bootstrap is not a capture-day bootstrap.",
+    "Some group IDs span multiple capture files.",
+    "Three rare classes remain excluded from headline macro F1.",
+    "Their predictions remain represented in the full confusion matrices.",
+    "Bootstrap uncertainty is conditional on this fixed test dataset and the existing trained models."
+  ],
+  "input_test_sha256": "b51c7a135ee658406ac196b08e2ef921320308f35c8aead05bcfd3245c559c06",
+  "imputer_sha256": "7f4a29ca7f92e81f43b9a929ed9134ac3302499e20f243299483caddbdfbcfca",
+  "encoder_sha256": "32a03f904a625ba0639cb7a1e6c9d5f69d15ab5c99cc4f7e067d5543ae01e0ed",
+  "model_sha256": {
+    "xgboost_baseline": "a18282ff5bbda48608c989896fb2263b6f2e5a15938016e2c3242549c298e1bc",
+    "xgboost_balanced": "cffc9effe40e93ea5cbe15c431d8a013a58ee9b1425b20b8243c08a3a5e20008",
+    "xgboost_sqrt_balanced": "5e3d59b3845b71974992cdb0ead6e64e31eab44832e2ad1fc243e2b7bb58c61a"
+  }
+}

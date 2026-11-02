@@ -18,22 +18,49 @@ def scenario_metrics(y_true, y_pred, eligible_classes, benign_label="BENIGN"):
 
     truth_labels = sorted(set(y_true.tolist()))
     union_labels = sorted(set(y_true.tolist()) | set(y_pred.tolist()))
-    eligible_present = [c for c in truth_labels if c in eligible_classes]
-    not_evaluable = [c for c in truth_labels if c not in eligible_classes]
+
+    eligible_present = [
+        c for c in truth_labels if c in eligible_classes
+    ]
+    not_evaluable = [
+        c for c in truth_labels if c not in eligible_classes
+    ]
 
     # Headline: eligible classes present in the truth, nothing else.
     headline = (
-        f1_score(y_true, y_pred, labels=eligible_present,
-                 average="macro", zero_division=0)
-        if eligible_present else float("nan")
+        f1_score(
+            y_true,
+            y_pred,
+            labels=eligible_present,
+            average="macro",
+            zero_division=0,
+        )
+        if eligible_present
+        else float("nan")
     )
 
     # Diagnostic: macro over the union of truth and predicted labels.
-    union_macro = f1_score(y_true, y_pred, labels=union_labels,
-                           average="macro", zero_division=0)
+    # A single-label union means every observation has the same true
+    # and predicted class, so its F1 score is exactly 1.0.
+    union_macro = (
+        1.0
+        if len(union_labels) == 1
+        else f1_score(
+            y_true,
+            y_pred,
+            labels=union_labels,
+            average="macro",
+            zero_division=0,
+        )
+    )
 
     precision, recall, f1, support = precision_recall_fscore_support(
-        y_true, y_pred, labels=truth_labels, zero_division=0)
+        y_true,
+        y_pred,
+        labels=truth_labels,
+        zero_division=0,
+    )
+
     per_class = pd.DataFrame({
         "class": truth_labels,
         "support": support,
@@ -43,14 +70,23 @@ def scenario_metrics(y_true, y_pred, eligible_classes, benign_label="BENIGN"):
         "eligible": [c in eligible_classes for c in truth_labels],
     })
 
-    absent_predictions = int(np.sum(~np.isin(y_pred, truth_labels)))
+    absent_predictions = int(
+        np.sum(~np.isin(y_pred, truth_labels))
+    )
 
     benign_mask = y_true == benign_label
+
     if benign_mask.any():
-        benign_recall = float(np.mean(y_pred[benign_mask] == benign_label))
+        benign_recall = float(
+            np.mean(y_pred[benign_mask] == benign_label)
+        )
         benign_fpr = 1.0 - benign_recall
     else:
         benign_recall = benign_fpr = float("nan")
+
+    confusion_labels = sorted(
+        set(union_labels) | set(eligible_classes)
+    )
 
     return {
         "rows": int(len(y_true)),
@@ -62,7 +98,11 @@ def scenario_metrics(y_true, y_pred, eligible_classes, benign_label="BENIGN"):
         "absent_class_predictions": absent_predictions,
         "benign_recall": benign_recall,
         "benign_false_positive_rate": benign_fpr,
-        "confusion_labels": union_labels,
-        "confusion_matrix": confusion_matrix(y_true, y_pred, labels=union_labels),
+        "confusion_labels": confusion_labels,
+        "confusion_matrix": confusion_matrix(
+            y_true,
+            y_pred,
+            labels=confusion_labels,
+        ),
         "per_class": per_class,
     }

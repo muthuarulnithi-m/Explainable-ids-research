@@ -1,0 +1,4 @@
+comparison,point_difference,bootstrap_replicates,bootstrap_unit,ci_level,ci_lower,ci_upper,excludes_zero
+baseline_minus_balanced,0.0008087354655633705,5000,paired_group_id,95,-0.0074713443855614235,0.009281720548645591,False
+baseline_minus_sqrt_balanced,-0.005371973360026705,5000,paired_group_id,95,-0.013083052750800734,0.00211071434352807,False
+balanced_minus_sqrt_balanced,-0.0061807088255900755,5000,paired_group_id,95,-0.013305447120798208,0.0011115591429413545,False
